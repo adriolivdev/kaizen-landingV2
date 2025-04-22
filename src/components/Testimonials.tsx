@@ -12,31 +12,31 @@ export default function Testimonials() {
     {
       nome: 'Marcos Ferreira',
       texto: 'A Kaizen foi essencial para colocar minha empresa no digital. Atendimento atencioso e resultado acima do esperado!',
-      imagem: '/avatars/marcos.png',
+      imagem: '/marcos-cliente.png',
     },
     {
       nome: 'Letícia Andrade',
       texto: 'O site ficou lindo e funcional. Meus clientes agora conseguem acessar tudo com facilidade.',
-      imagem: '/avatars/leticia.png',
+      imagem: '/leticia-cliente.png',
     },
     {
       nome: 'João Silva',
       texto: 'Equipe criativa e comprometida. Já recomendei para vários colegas empreendedores.',
-      imagem: '/avatars/joao.png',
+      imagem: '/joao-cliente.png',
     },
     {
       nome: 'Renata Costa',
       texto: 'Profissionais dedicadas e com visão estratégica. A Kaizen transformou a forma como me comunico com meus clientes.',
-      imagem: '/avatars/renata.png',
+      imagem: '/renata-cliente.png',
     },
   ];
 
   return (
     <section className="bg-light text-dark py-20 px-6 md:px-16 lg:px-32">
       <div className="max-w-5xl mx-auto text-center">
-        <h2 className="text-3xl md:text-4xl font-bold mb-4">Depoimentos</h2>
+        <h2 className="text-3xl md:text-4xl font-bold mb-4">O que nossos clientes estão dizendo</h2>
         <p className="text-gray-600 mb-12">
-          O que dizem nossos clientes sobre os serviços da Kaizen Code Digital.
+          Os Feedbacks mais recentes do nossos clientes sobre os serviços da Kaizen Code Digital.
         </p>
 
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">

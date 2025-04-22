@@ -1,5 +1,5 @@
 // src/components/SocialSection.tsx
-import { FaInstagram, FaLinkedin, FaWhatsapp } from 'react-icons/fa';
+import { FaInstagram, FaFacebook, FaWhatsapp } from 'react-icons/fa';
 
 export default function SocialSection() {
   return (
@@ -19,15 +19,15 @@ export default function SocialSection() {
           <FaInstagram />
         </a>
         <a
-          href="https://www.linkedin.com/company/kaizencodedigital"
+          href="https://www.facebook.com/profile.php?id=61567241240298"
           target="_blank"
           rel="noopener noreferrer"
           className="hover:text-primary transition"
         >
-          <FaLinkedin />
+          <FaFacebook />
         </a>
         <a
-          href="https://wa.me/SEUNUMERO"
+          href="https://wa.link/qcbqwl"
           target="_blank"
           rel="noopener noreferrer"
           className="hover:text-primary transition"

@@ -1,5 +1,5 @@
 // src/components/Footer.tsx
-import { FaInstagram, FaLinkedin, FaWhatsapp } from 'react-icons/fa';
+import { FaFacebook, FaInstagram, FaWhatsapp } from 'react-icons/fa';
 
 export default function Footer() {
   return (
@@ -22,7 +22,7 @@ export default function Footer() {
           <h4 className="text-lg font-semibold mb-3">Redes Sociais</h4>
           <div className="flex gap-4 text-xl">
             <a
-              href="https://www.instagram.com/kaizencodedigital"
+              href="https://www.instagram.com/kaizencodedigital/"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-primary"
@@ -30,15 +30,15 @@ export default function Footer() {
               <FaInstagram />
             </a>
             <a
-              href="https://www.linkedin.com/company/kaizencodedigital"
+              href="https://www.facebook.com/profile.php?id=61567241240298"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-primary"
             >
-              <FaLinkedin />
+              <FaFacebook />
             </a>
             <a
-              href="https://wa.me/SEUNUMERO"
+              href="https://wa.link/qcbqwl"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-primary"

@@ -11,7 +11,7 @@ declare global {
 export default function WhatsAppFloatButton() {
   return (
     <a
-      href="https://wa.me/55SEUNUMERO?text=Olá!%20Quero%20um%20orçamento"
+      href="https://wa.link/qcbqwl"
       target="_blank"
       rel="noopener noreferrer"
       onClick={() => {

@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import axios from 'axios';
 
 export default function ContactForm() {
   const [enviado, setEnviado] = useState(false);
@@ -15,11 +14,24 @@ export default function ContactForm() {
       return;
     }
 
+    const actionUrl = 'https://formsubmit.co/kaizencodedigital@gmail.com'; // Substitua pelo seu e-mail
+
     try {
-      await axios.post('/api/sendForm', Object.fromEntries(formData.entries()));
-      console.log('Mensagem enviada com sucesso');
-      setEnviado(true);
-      form.reset();
+      const response = await fetch(actionUrl, {
+        method: 'POST',
+        body: formData,
+        headers: {
+          'Accept': 'application/json',
+        },
+      });
+
+      if (response.ok) {
+        console.log('Mensagem enviada com sucesso');
+        setEnviado(true);
+        form.reset();
+      } else {
+        console.error('Erro ao enviar:', response.statusText);
+      }
     } catch (error) {
       console.error('Erro ao enviar a mensagem:', error);
     }

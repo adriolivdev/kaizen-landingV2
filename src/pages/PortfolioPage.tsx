@@ -42,26 +42,26 @@ const todosProjetos: Projeto[] = [
   {
     nome: 'Yuri SoundCar',
     descricao: 'Landing page para loja de acessórios automotivos.',
-    imagem: '/portfolio/yuri-soundcar.png',
-    link: 'https://yurisoundcar.vercel.app',
+    imagem: '/yurisound-project.png',
+    link: 'https://yurisoundcar-landing.vercel.app/',
     stacks: ['react', 'tailwind', 'ts'],
     categoria: 'Landing Pages',
   },
   {
-    nome: 'Top Instalações',
-    descricao: 'Site institucional para serviços residenciais.',
-    imagem: '/portfolio/top-instalacoes.png',
+    nome: 'Lar Ideal Imoveis',
+    descricao: 'Site para imobiliária.',
+    imagem: '/larIdeal-project.png',
     link: 'https://topinstalacoes.vercel.app',
     stacks: ['react', 'tailwind'],
     categoria: 'Landing Pages',
   },
   {
-    nome: 'Bot de Finanças',
-    descricao: 'Automação com Python para registrar receitas e despesas.',
-    imagem: '/portfolio/bot-financas.png',
+    nome: 'Top Instaçalações',
+    descricao: 'Site para empresa de instalação de serviços residenciais.',
+    imagem: 'topInstalacao-project.png',
     link: '#',
-    stacks: ['python'],
-    categoria: 'Automação & Bots',
+    stacks: ['react', 'tailwind'],
+    categoria: 'Landing Pages',
   },
 ];
 
@@ -89,7 +89,7 @@ export default function PortfolioPage() {
       <div className="flex justify-between items-center mb-6">
         <h1 className="text-4xl font-bold">Todos os Projetos</h1>
         <Link to="/" className="flex items-center gap-2 text-sm text-gray-600 hover:text-primary">
-          <FaArrowLeft /> Voltar para Home
+          <FaArrowLeft /> Voltar para Pagina Inicial
         </Link>
       </div>
 

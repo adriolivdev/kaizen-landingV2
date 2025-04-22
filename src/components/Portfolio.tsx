@@ -1,27 +1,32 @@
-// src/components/Portfolio.tsx
 import { Link } from 'react-router-dom';
 
 export default function Portfolio() {
   const projetos = [
     {
-      nome: 'Yuri SoundCar',
+      nome: 'Yuri SoundCar serviços automotivos',
       descricao: 'Landing page para loja de acessórios e serviços automotivos.',
-      imagem: '/portfolio/yuri-soundcar.png',
-      link: 'https://yurisoundcar.vercel.app',
+      imagem: '/yurisound-project.png',
+      link: 'https://yurisoundcar-landing.vercel.app/',
     },
     {
-      nome: 'Top Instalações',
+      nome: 'Lar Ideal Imoveis',
       descricao: 'Site institucional fictício para serviços residenciais.',
-      imagem: '/portfolio/top-instalacoes.png',
-      link: 'https://topinstalacoes.vercel.app',
+      imagem: '/larIdeal-project.png',
+      link: 'https://larideal-imoveis-landing.vercel.app/',
+    },
+    {
+      nome: 'Top Instaçalações',
+      descricao: 'Site para empresa TopInstalações, especializada em serviços de instalação residencial.',
+      imagem: '/topInstalacao-project.png',
+      link: 'https://vercel.com/adriolivdevs-projects/topinstalacoes-landing',
     },
   ];
 
   return (
-    <section id="portfolio" className="bg-gray-100 text-dark py-20 px-6 md:px-16 lg:px-32 mt-24">
+    <section id="portfolio" className="bg-gray-100 text-dark py-12 px-6 md:px-16 lg:px-32 mt-0">
       <div className="max-w-6xl mx-auto text-center">
         <h2 className="text-3xl md:text-4xl font-bold mb-4">Portfólio</h2>
-        <p className="text-gray-700 mb-12 max-w-2xl mx-auto">
+        <p className="text-gray-700 mb-10 max-w-2xl mx-auto">
           Veja alguns projetos desenvolvidos pela nossa equipe.
         </p>
 
@@ -32,7 +37,7 @@ export default function Portfolio() {
               href={projeto.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="block bg-white rounded-2xl shadow-md hover:shadow-lg transition overflow-hidden"
+              className="block bg-white border border-gray-200 rounded-2xl shadow-md hover:shadow-lg transition overflow-hidden"
             >
               <img
                 src={projeto.imagem}
