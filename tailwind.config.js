@@ -12,6 +12,12 @@ export default {
         dark: '#0f0f0f',
         light: '#f5f5f5',
       },
+      extend: {
+        animation: {
+          'bounce-slow': 'bounce 2s infinite',
+        },
+      }
+      
     },
   },
   plugins: [],

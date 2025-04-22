@@ -1,26 +1,30 @@
 // src/pages/Home.tsx
 import Header from '../components/Header';
-import Hero from '../components/Hero';
-import Services from '../components/Services';
-import Portfolio from '../components/Portfolio';
-import Testimonials from '../components/Testimonials';
-import SocialSection from '../components/SocialSection';
-import ContactForm from '../components/ContactForm';
 import Footer from '../components/Footer';
+import HeroSection from '../components/Hero';
+import ServicesSection from '../components/Services';
+import PortfolioSection from '../components/Portfolio';
+import ContactSection from '../components/ContactForm';
+import OrcamentoEtapasSection from '../components/OrcamentoEtapasSection';
+import OnboardingSection from '../components/OnboardingSection';
+import SocialSection from '../components/SocialSection';
+import WhatsAppFloatButton from '../components/WhatsAppFloatButton';
 
 export default function Home() {
   return (
-    <>
+    <div className="bg-light text-dark">
       <Header />
       <main className="pt-24">
-        <Hero />
-        <Services />
-        <Portfolio />
-        <Testimonials />
+        <HeroSection />
+        <ServicesSection />
+        <PortfolioSection />
+        <OrcamentoEtapasSection />
+        <OnboardingSection />
         <SocialSection />
-        <ContactForm />
-        <Footer />
+        <ContactSection />
+        <WhatsAppFloatButton />
       </main>
-    </>
+      <Footer />
+    </div>
   );
 }

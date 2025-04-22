@@ -17,7 +17,7 @@ export default function Hero() {
         {/* Botão CTA */}
         <a
           href="#contato"
-          className="inline-block bg-primary text-dark font-semibold px-6 py-3 rounded-2xl transition-all hover:brightness-110 hover:scale-105"
+          className="inline-block bg-primary text-white font-semibold px-6 py-3 rounded-2xl transition-all hover:brightness-110 hover:scale-105"
         >
           Solicite um orçamento gratuito
         </a>

@@ -18,10 +18,10 @@ export default function Portfolio() {
   ];
 
   return (
-    <section id="portfolio" className="bg-white text-dark py-20 px-6 md:px-16 lg:px-32">
+    <section id="portfolio" className="bg-gray-100 text-dark py-20 px-6 md:px-16 lg:px-32 mt-24">
       <div className="max-w-6xl mx-auto text-center">
         <h2 className="text-3xl md:text-4xl font-bold mb-4">Portfólio</h2>
-        <p className="text-gray-600 mb-12 max-w-2xl mx-auto">
+        <p className="text-gray-700 mb-12 max-w-2xl mx-auto">
           Veja alguns projetos desenvolvidos pela nossa equipe.
         </p>
 
@@ -32,7 +32,7 @@ export default function Portfolio() {
               href={projeto.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="block bg-light rounded-2xl shadow-md hover:shadow-lg transition overflow-hidden"
+              className="block bg-white rounded-2xl shadow-md hover:shadow-lg transition overflow-hidden"
             >
               <img
                 src={projeto.imagem}
@@ -50,7 +50,7 @@ export default function Portfolio() {
         <div className="mt-12">
           <Link
             to="/portfolio"
-            className="bg-primary text-dark font-semibold px-6 py-3 rounded-xl hover:brightness-110 transition"
+            className="bg-primary text-white font-semibold px-6 py-3 rounded-xl hover:brightness-110 transition"
           >
             Ver todos os projetos
           </Link>

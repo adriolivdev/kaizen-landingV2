@@ -3,9 +3,11 @@
   <head>
     <!-- Charset -->
     <meta charset="UTF-8" />
+
     <!-- Responsivo -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Título da aba -->
+
+    <!-- Título -->
     <title>Kaizen Code Digital | Inovação em Soluções Digitais</title>
 
     <!-- Descrição para SEO -->
@@ -14,7 +16,7 @@
       content="A Kaizen Code Digital transforma ideias em soluções digitais reais. Criamos sites modernos, automações inteligentes, social media e design estratégico para destacar sua empresa online."
     />
 
-    <!-- Palavras-chave para SEO -->
+    <!-- Palavras-chave -->
     <meta
       name="keywords"
       content="Kaizen Code Digital, agência digital, criação de sites, automação, social media, design gráfico, marketing digital, presença online"
@@ -27,9 +29,9 @@
     <meta name="robots" content="index, follow" />
 
     <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="/iso-logo.ico" />
 
-    <!-- Open Graph (para redes sociais) -->
+    <!-- Open Graph -->
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Kaizen Code Digital" />
     <meta
@@ -53,10 +55,35 @@
       name="twitter:image"
       content="https://kaizencodedigital.com.br/assets/preview-kaizen.png"
     />
+
+    <!-- Facebook Pixel (comentado) -->
+    <!-- 
+    <script>
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window, document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', 'SEU_PIXEL_ID');
+      fbq('track', 'PageView');
+    </script> 
+    -->
+
   </head>
 
   <body class="antialiased bg-light text-dark">
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+
+    <!-- Facebook Pixel noscript (comentado) -->
+    <!-- 
+    <noscript>
+      <img height="1" width="1" style="display:none"
+        src="https://www.facebook.com/tr?id=SEU_PIXEL_ID&ev=PageView&noscript=1"/>
+    </noscript>
+    -->
   </body>
 </html>
