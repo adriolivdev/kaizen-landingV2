@@ -1,4 +1,3 @@
-// src/pages/Home.tsx
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import HeroSection from '../components/Hero';
@@ -11,6 +10,7 @@ import SocialSection from '../components/SocialSection';
 import WhatsAppFloatButton from '../components/WhatsAppFloatButton';
 import Testimonials from '../components/Testimonials';
 import FAQSection from '../components/FAQSection';
+import { Link } from 'react-router-dom';
 
 export default function Home() {
   return (
@@ -22,10 +22,18 @@ export default function Home() {
         <PortfolioSection />
         <OrcamentoEtapasSection />
         <OnboardingSection />
-        <Testimonials/>
+        <Testimonials />
         <SocialSection />
         <ContactSection />
-        <FAQSection/>
+        <FAQSection />
+
+        <div className="text-center mt-16 text-sm text-gray-500">
+          Ao enviar seus dados, você concorda com nossa{' '}
+          <Link to="/politica" className="text-primary underline hover:brightness-110">
+            Política de Privacidade
+          </Link>.
+        </div>
+
         <WhatsAppFloatButton />
       </main>
       <Footer />
