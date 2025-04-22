@@ -11,7 +11,7 @@ export default function Footer() {
           <p className="text-gray-400 text-sm">
             Soluções digitais criativas para microempreendedores e pequenas empresas.
           </p>
-          <p className="text-gray-500 text-xs mt-4">CNPJ: 00.000.000/0001-00</p>
+          <p className="text-gray-500 text-xs mt-4">CNPJ: 02.000.000/0001-00</p>
         </div>
 
         {/* Espaço reservado para manter layout */}
