@@ -15,18 +15,8 @@ export default function ContactForm() {
       return;
     }
 
-    const data = new URLSearchParams();
-    data.append('nome', formData.get('nome') as string);
-    data.append('email', formData.get('email') as string);
-    data.append('whatsapp', formData.get('whatsapp') as string);
-    data.append('assunto', formData.get('assunto') as string);
-    data.append('mensagem', formData.get('mensagem') as string);
-
     try {
-      await axios.post(
-        'https://script.google.com/macros/s/AKfycbxuDHc4CuNCLOqvy3IUlmFCvGapEpuIn-aSynAi4QXLhBteGdRLUn6oKCXdp5yNoR_YSA/exec',
-        data
-      );
+      await axios.post('/api/sendForm', Object.fromEntries(formData.entries()));
       console.log('Mensagem enviada com sucesso');
       setEnviado(true);
       form.reset();
