@@ -9,15 +9,24 @@ export default function ContactForm() {
 
     const form = e.target as HTMLFormElement;
     const formData = new FormData(form);
-    const data = Object.fromEntries(formData.entries());
 
     if (!formData.get('consentimento')) {
       alert('Você precisa aceitar os termos de privacidade para continuar.');
       return;
     }
 
+    const data = new URLSearchParams();
+    data.append('nome', formData.get('nome') as string);
+    data.append('email', formData.get('email') as string);
+    data.append('whatsapp', formData.get('whatsapp') as string);
+    data.append('assunto', formData.get('assunto') as string);
+    data.append('mensagem', formData.get('mensagem') as string);
+
     try {
-      await axios.post('https://script.google.com/macros/s/AKfycbyU6y0c8_JcNFUaEzRZ8FXDDiGXtyt8II4-cjw83a1wERL1jqmmm3a3FRGm8NCzDd8wjA/exec', data);
+      await axios.post(
+        'https://script.google.com/macros/s/AKfycbxuDHc4CuNCLOqvy3IUlmFCvGapEpuIn-aSynAi4QXLhBteGdRLUn6oKCXdp5yNoR_YSA/exec',
+        data
+      );
       console.log('Mensagem enviada com sucesso');
       setEnviado(true);
       form.reset();
