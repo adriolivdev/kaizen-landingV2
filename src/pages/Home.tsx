@@ -10,7 +10,6 @@ import SocialSection from '../components/SocialSection';
 import WhatsAppFloatButton from '../components/WhatsAppFloatButton';
 import Testimonials from '../components/Testimonials';
 import FAQSection from '../components/FAQSection';
-import { Link } from 'react-router-dom';
 
 export default function Home() {
   return (
