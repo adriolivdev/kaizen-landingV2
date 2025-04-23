@@ -29,7 +29,6 @@ export default function ContactForm() {
         console.log('Mensagem enviada com sucesso');
         setEnviado(true);
         form.reset();
-        setTimeout(() => setEnviado(false), 5000);
       } else {
         console.error('Erro ao enviar:', response.statusText);
       }
@@ -75,24 +74,20 @@ export default function ContactForm() {
           <div className="flex items-start gap-2">
             <input type="checkbox" id="consentimento" name="consentimento" required className="mt-1" />
             <label htmlFor="consentimento" className="text-sm text-gray-600">
-              Eu concordo com a{' '}
-              <a href="/politica" target="_blank" rel="noopener noreferrer" className="underline text-primary hover:brightness-110">
-                política de privacidade
-              </a>{' '}
-              e autorizo o contato por e-mail ou WhatsApp.
+              Eu concordo com a <a href="/politica" className="underline text-primary hover:brightness-110">política de privacidade</a> e autorizo o contato por e-mail ou WhatsApp.
             </label>
           </div>
+
+          <p className="text-xs text-gray-500 text-center">
+            Ao enviar seus dados, você concorda com nossa{' '}
+            <a href="/politica" className="text-primary underline hover:brightness-110">
+              Política de Privacidade
+            </a>.
+          </p>
 
           <button type="submit" className="w-full bg-primary text-white font-semibold py-3 rounded-xl hover:brightness-110 transition">
             ✉️ Enviar mensagem
           </button>
-
-          <p className="text-xs text-gray-500 text-center">
-            Ao enviar seus dados, você concorda com nossa{' '}
-            <a href="/politica" target="_blank" rel="noopener noreferrer" className="underline text-primary hover:brightness-110">
-              Política de Privacidade
-            </a>.
-          </p>
 
           {enviado && (
             <p className="mt-4 text-green-600 font-medium text-center">

@@ -26,14 +26,6 @@ export default function Home() {
         <SocialSection />
         <ContactSection />
         <FAQSection />
-
-        <div className="text-center mt-16 text-sm text-gray-500">
-          Ao enviar seus dados, você concorda com nossa{' '}
-          <Link to="/politica" className="text-primary underline hover:brightness-110">
-            Política de Privacidade
-          </Link>.
-        </div>
-
         <WhatsAppFloatButton />
       </main>
       <Footer />
