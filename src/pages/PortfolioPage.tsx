@@ -51,7 +51,7 @@ const todosProjetos: Projeto[] = [
     nome: 'Lar Ideal Imoveis',
     descricao: 'Site para imobiliária.',
     imagem: '/larIdeal-project.png',
-    link: 'https://topinstalacoes.vercel.app',
+    link: 'https://topinstalacoes-landing.vercel.app/',
     stacks: ['react', 'tailwind'],
     categoria: 'Landing Pages',
   },

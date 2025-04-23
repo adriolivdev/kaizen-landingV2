@@ -14,14 +14,14 @@ export default function ContactForm() {
       return;
     }
 
-    const actionUrl = 'https://formsubmit.co/kaizencodedigital@gmail.com'; // Substitua pelo seu e-mail
+    const actionUrl = 'https://formsubmit.co/kaizencodedigital@gmail.com';
 
     try {
       const response = await fetch(actionUrl, {
         method: 'POST',
         body: formData,
         headers: {
-          Accept: 'application/json',
+          'Accept': 'application/json',
         },
       });
 
@@ -29,6 +29,7 @@ export default function ContactForm() {
         console.log('Mensagem enviada com sucesso');
         setEnviado(true);
         form.reset();
+        setTimeout(() => setEnviado(false), 5000);
       } else {
         console.error('Erro ao enviar:', response.statusText);
       }
@@ -47,98 +48,51 @@ export default function ContactForm() {
 
         <form onSubmit={handleSubmit} className="bg-white shadow-xl rounded-2xl p-8 space-y-6 text-left">
           <div>
-            <label htmlFor="nome" className="block mb-1 font-medium">
-              Seu nome
-            </label>
-            <input
-              type="text"
-              id="nome"
-              name="nome"
-              required
-              className="w-full px-4 py-3 border rounded-xl bg-gray-50"
-            />
+            <label htmlFor="nome" className="block mb-1 font-medium">Seu nome</label>
+            <input type="text" id="nome" name="nome" required className="w-full px-4 py-3 border rounded-xl bg-gray-50" />
           </div>
 
           <div>
-            <label htmlFor="email" className="block mb-1 font-medium">
-              Seu e-mail
-            </label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              required
-              className="w-full px-4 py-3 border rounded-xl bg-gray-50"
-            />
+            <label htmlFor="email" className="block mb-1 font-medium">Seu e-mail</label>
+            <input type="email" id="email" name="email" required className="w-full px-4 py-3 border rounded-xl bg-gray-50" />
           </div>
 
           <div>
-            <label htmlFor="whatsapp" className="block mb-1 font-medium">
-              WhatsApp (com DDD)
-            </label>
-            <input
-              type="tel"
-              id="whatsapp"
-              name="whatsapp"
-              required
-              className="w-full px-4 py-3 border rounded-xl bg-gray-50"
-            />
+            <label htmlFor="whatsapp" className="block mb-1 font-medium">WhatsApp (com DDD)</label>
+            <input type="tel" id="whatsapp" name="whatsapp" required className="w-full px-4 py-3 border rounded-xl bg-gray-50" />
           </div>
 
           <div>
-            <label htmlFor="assunto" className="block mb-1 font-medium">
-              Assunto
-            </label>
-            <input
-              type="text"
-              id="assunto"
-              name="assunto"
-              required
-              className="w-full px-4 py-3 border rounded-xl bg-gray-50"
-            />
+            <label htmlFor="assunto" className="block mb-1 font-medium">Assunto</label>
+            <input type="text" id="assunto" name="assunto" required className="w-full px-4 py-3 border rounded-xl bg-gray-50" />
           </div>
 
           <div>
-            <label htmlFor="mensagem" className="block mb-1 font-medium">
-              Sua mensagem
-            </label>
-            <textarea
-              id="mensagem"
-              name="mensagem"
-              rows={5}
-              required
-              className="w-full px-4 py-3 border rounded-xl bg-gray-50"
-            />
+            <label htmlFor="mensagem" className="block mb-1 font-medium">Sua mensagem</label>
+            <textarea id="mensagem" name="mensagem" rows={5} required className="w-full px-4 py-3 border rounded-xl bg-gray-50" />
           </div>
 
           <div className="flex items-start gap-2">
-            <input
-              type="checkbox"
-              id="consentimento"
-              name="consentimento"
-              required
-              className="mt-1"
-            />
+            <input type="checkbox" id="consentimento" name="consentimento" required className="mt-1" />
             <label htmlFor="consentimento" className="text-sm text-gray-600">
               Eu concordo com a{' '}
-              <a
-                href="/politica"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="underline text-primary hover:brightness-110"
-              >
+              <a href="/politica" target="_blank" rel="noopener noreferrer" className="underline text-primary hover:brightness-110">
                 política de privacidade
               </a>{' '}
               e autorizo o contato por e-mail ou WhatsApp.
             </label>
           </div>
 
-          <button
-            type="submit"
-            className="w-full bg-primary text-white font-semibold py-3 rounded-xl hover:brightness-110 transition"
-          >
+          <button type="submit" className="w-full bg-primary text-white font-semibold py-3 rounded-xl hover:brightness-110 transition">
             ✉️ Enviar mensagem
           </button>
+
+          <p className="text-xs text-gray-500 text-center">
+            Ao enviar seus dados, você concorda com nossa{' '}
+            <a href="/politica" target="_blank" rel="noopener noreferrer" className="underline text-primary hover:brightness-110">
+              Política de Privacidade
+            </a>.
+          </p>
 
           {enviado && (
             <p className="mt-4 text-green-600 font-medium text-center">

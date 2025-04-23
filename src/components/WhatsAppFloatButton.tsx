@@ -1,4 +1,3 @@
-// src/components/WhatsAppFloatButton.tsx
 import { FaWhatsapp } from 'react-icons/fa';
 
 // Garantir tipagem para o fbq do Pixel (evita erro no TS)
@@ -19,7 +18,8 @@ export default function WhatsAppFloatButton() {
           window.fbq('track', 'Contact');
         }
       }}
-      className="fixed bottom-5 right-5 z-50 p-4 rounded-full text-white bg-green-500 shadow-lg hover:scale-110 transition-transform duration-300"
+      className="fixed bottom-5 right-5 z-50 p-4 rounded-full text-white bg-green-500 shadow-lg hover:scale-110 transition-transform duration-300 animate-bounce"
+      aria-label="Contato via WhatsApp"
     >
       <FaWhatsapp size={26} />
     </a>
