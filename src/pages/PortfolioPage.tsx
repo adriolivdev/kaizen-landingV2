@@ -59,10 +59,21 @@ const todosProjetos: Projeto[] = [
     nome: 'Top Instaçalações',
     descricao: 'Site para empresa de instalação de serviços residenciais.',
     imagem: 'topInstalacao-project.png',
-    link: '#',
+    link: 'https://topinstalacoes-landing.vercel.app/',
     stacks: ['react', 'tailwind'],
     categoria: 'Landing Pages',
   },
+  {
+    nome: 'Conta Fácil',
+    descricao: 'Landing page de conversão para empresa de contabilidade digital.',
+    imagem: 'contafacil.png',
+    link: 'https://contafacil-landing.vercel.app/',
+    stacks: ['react', 'typescript', 'tailwind'],
+    categoria: 'Landing Pages',
+  }
+  
+
+  
 ];
 
 export default function PortfolioPage() {
