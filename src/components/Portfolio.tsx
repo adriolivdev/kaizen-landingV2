@@ -21,15 +21,7 @@ export default function Portfolio() {
       link: 'https://topinstalacoes-landing.vercel.app/',
     },
 
-    {
-      nome: 'Conta Fácil',
-      descricao: 'Landing page para a Conta Fácil, plataforma de contabilidade digital simplificada.',
-      imagem: '/contafacil.png',
-      link: 'https://contafacil-landing.vercel.app/',
-    }
     
-
-
   ];
 
   return (
