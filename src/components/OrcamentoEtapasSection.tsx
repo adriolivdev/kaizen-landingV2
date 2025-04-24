@@ -26,7 +26,7 @@ export default function OrcamentoEtapasSection() {
     return (
       <section id="orcamento" className="py-20 px-6 md:px-16 lg:px-32 bg-gray-100 text-dark">
         <div className="max-w-6xl mx-auto text-center">
-          <h2 className="text-4xl font-bold mb-4">Como funciona nosso Orçamento?🤔</h2>
+          <h2 className="text-4xl text-primary font-bold mb-4">Como funciona nosso Orçamento?🤔</h2>
           <p className="text-gray-600 mb-12 max-w-2xl mx-auto">
             Nosso processo é transparente, organizado e pensado pra facilitar sua vida desde o primeiro contato até a entrega final.
           </p>

@@ -39,7 +39,7 @@ import {
     return (
       <section id="servicos" className="bg-light text-dark py-20 px-6 md:px-16 lg:px-32">
         <div className="max-w-6xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Nossos Serviços</h2>
+          <h2 className="text-3xl text-primary md:text-4xl font-bold mb-4">Nossos Serviços</h2>
           <p className="text-gray-600 mb-12 max-w-2xl mx-auto">
             Soluções sob medida para destacar sua empresa no ambiente digital.
           </p>

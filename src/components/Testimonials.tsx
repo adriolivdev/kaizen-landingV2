@@ -34,7 +34,7 @@ export default function Testimonials() {
   return (
     <section className="bg-light text-dark py-20 px-6 md:px-16 lg:px-32">
       <div className="max-w-5xl mx-auto text-center">
-        <h2 className="text-3xl md:text-4xl font-bold mb-4">O que nossos clientes estão dizendo</h2>
+        <h2 className="text-3xl text-primary md:text-4xl font-bold mb-4">O que nossos clientes estão dizendo</h2>
         <p className="text-gray-600 mb-12">
           Os Feedbacks mais recentes do nossos clientes sobre os serviços da Kaizen Code Digital.
         </p>
