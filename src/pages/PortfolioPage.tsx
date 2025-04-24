@@ -67,7 +67,7 @@ const todosProjetos: Projeto[] = [
     nome: 'Conta Fácil',
     descricao: 'Landing page de conversão para empresa de contabilidade digital.',
     imagem: 'contafacil.png',
-    link: 'https://contafacil-landing.vercel.app/',
+    link: 'https://contafacil-rosy.vercel.app/',
     stacks: ['react', 'typescript', 'tailwind'],
     categoria: 'Landing Pages',
   }
